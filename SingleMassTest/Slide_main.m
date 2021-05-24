@@ -94,7 +94,7 @@ model.derivatives = 'finite-difference';     % finite-difference, complex, autom
 model.maxIteration = 1e6;   %
 model.printoff = 'true';   % 0, 1
 % two element array specifiying the NLP solver Optimality and Feasibility Tolerances
-model.tolerance = [1e-5, 2e-5];       % [1e-6, 2e-6]
+model.tolerance = [1e-6, 2e-6];       % [1e-6, 2e-6]
 addpath(genpath('./gpops'));
 ts = cputime;
 [output,gpopsHistory]=gpops(model);
@@ -105,14 +105,32 @@ te = cputime;
 robot.solve_time = te - ts;
 
 figure
+subplot(2,3,1)
 hold on
 plot(solutionPlot(1).time,solutionPlot(1).state(:,1))
 plot(solutionPlot(2).time,solutionPlot(2).state(:,1))
+xlabel('Time (s)')
+ylabel('Position (m)')
+legend('Stage 1','Stage 2')
+title('Position')
 
-figure
+subplot(2,3,2)
 hold on
 plot(solutionPlot(1).time,solutionPlot(1).state(:,2))
 plot(solutionPlot(2).time,solutionPlot(2).state(:,2))
+xlabel('Time (s)')
+ylabel('Velocity (m/s)')
+legend('Stage 1','Stage 2')
+title('Velocity')
+
+subplot(2,3,3)
+hold on
+plot(solutionPlot(1).time,solutionPlot(1).control(:,1))
+plot(solutionPlot(2).time,solutionPlot(2).control(:,1))
+xlabel('Time (s)')
+ylabel('Force (N)')
+legend('Stage 1','Stage 2')
+title('Control Force')
 
 
 
