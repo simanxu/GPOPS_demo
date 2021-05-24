@@ -1,0 +1,67 @@
+ _______________________________________________________________________________________________________
+|                                                                                                       |
+| GPOPS Version 5.1 Running with the hp-Adaptive Radau Pseudospectral Method and SNOPT 7.1              |
+|_______________________________________________________________________________________________________|
+|                                                                                                       |
+| GPOPS Copyright (c) 2008-2011 Anil V. Rao and David Benson.                                           |
+|_______________________________________________________________________________________________________|
+|                                                                                                       |
+| SNOPT (c) Copyright Regents of the University of California and Stanford University.                  |
+|_______________________________________________________________________________________________________|
+|                                                                                                       |
+| Downloading, using, copying, or modifying the GPOPS code constitutes an agreement to ALL of the terms |
+| of the GPOPS license. Please see the LICENSE page on the GPOPS website at http://www.gpops.org.       |
+|_______________________________________________________________________________________________________|
+                                                                                                        
+
+ __________________________________________
+|                                          |
+|>>>>>>>>> Information in Phase 1 <<<<<<<<<|
+|__________________________________________|
+
+State 	1
+	 Start of Phase:    	0 <= State 1 <= 0
+	 During Phase:      	-10 <= State 1 <= 10
+	 Terminus of Phase: 	4.9 <= State 1 <= 5.1
+State 	2
+	 Start of Phase:    	0 <= State 2 <= 0
+	 During Phase:      	-10 <= State 2 <= 10
+	 Terminus of Phase: 	-0.1 <= State 2 <= 0.1
+
+Control 	1
+	 During Phase:    	-20 <= Control 1 <= 20
+
+No Parameters in Phase 1
+
+No Path Constraints in Phase 1
+
+No Event Constraints in Phase 1
+
+Phase Duration: 5 <= duration <= 5
+
+
+ __________________________________________
+|                                          |
+|>>>>>>>>> Information in Phase 2 <<<<<<<<<|
+|__________________________________________|
+
+State 	1
+	 Start of Phase:    	4.8 <= State 1 <= 5.1
+	 During Phase:      	-10 <= State 1 <= 10
+	 Terminus of Phase: 	7.9 <= State 1 <= 8.1
+State 	2
+	 Start of Phase:    	-0.1 <= State 2 <= 0.1
+	 During Phase:      	-10 <= State 2 <= 10
+	 Terminus of Phase: 	-0.1 <= State 2 <= 0.1
+
+Control 	1
+	 During Phase:    	-20 <= Control 1 <= 20
+
+No Parameters in Phase 2
+
+No Path Constraints in Phase 2
+
+No Event Constraints in Phase 2
+
+Phase Duration: 5 <= duration <= 5
+
